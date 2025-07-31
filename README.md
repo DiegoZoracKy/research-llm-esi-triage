@@ -45,7 +45,7 @@ Follow the steps below to replicate the experiment.
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/DiegoZoracKy/research-llm-esi-triage.git](https://github.com/DiegoZoracKy/research-llm-esi-triage.git)
+    git clone https://github.com/DiegoZoracKy/research-llm-esi-triage.git
     cd research-llm-esi-triage
     ```
 
