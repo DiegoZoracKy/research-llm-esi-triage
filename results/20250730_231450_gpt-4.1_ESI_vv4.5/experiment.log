@@ -1,0 +1,46 @@
+2025-07-30 23:14:50,887 - esi_classification - INFO - main:512 - ======================================================================
+Starting Experiment: 20250730_231450_gpt-4.1_ESI_vv4.5
+======================================================================
+2025-07-30 23:14:50,887 - esi_classification - INFO - load_and_prepare_data:197 - Loading data from MIETIC-validate-samples.csv
+2025-07-30 23:14:50,890 - esi_classification - INFO - load_and_prepare_data:204 - Total samples in dataset: 50
+2025-07-30 23:14:50,891 - esi_classification - INFO - load_and_prepare_data:214 - Validated samples (RETAIN): 36
+2025-07-30 23:14:51,007 - esi_classification - INFO - run_experiment:334 - Starting ESI classification with gpt-4.1
+2025-07-30 23:18:17,380 - esi_classification - INFO - run_experiment:347 - Processing complete: 36 successful, 0 errors
+2025-07-30 23:18:17,390 - esi_classification - INFO - save_experiment_results:426 - Saving experiment results...
+2025-07-30 23:18:17,804 - esi_classification - INFO - plot_confusion_matrix:375 - Confusion matrix plot saved to results/20250730_231450_gpt-4.1_ESI_vv4.5/confusion_matrix.png
+2025-07-30 23:18:17,811 - esi_classification - INFO - generate_summary_report:501 - 
+======================================================================
+ESI CLASSIFICATION EXPERIMENT SUMMARY
+======================================================================
+Run Date: 2025-07-30 23:18:17
+Model: gpt-4.1
+Duration: 206.5 seconds
+
+--- DATASET & PROCESSING ---
+Source File: MIETIC-validate-samples.csv
+Total Samples Processed: 36
+Successful Predictions: 36 (100.0%)
+
+--- PERFORMANCE METRICS ---
+Accuracy: 0.8611
+Quadratic Weighted Kappa: 0.9479
+
+--- CLASSIFICATION REPORT ---
+            precision   recall      f1-score    support
+ESI-1       1.00        0.86        0.92        14.0
+ESI-2       0.73        1.00        0.85        11.0
+ESI-3       1.00        0.60        0.75        5.0
+ESI-4       0.80        1.00        0.89        4.0
+ESI-5       1.00        0.50        0.67        2.0
+macro avg   0.91        0.79        0.81        36.0
+weighted avg0.90        0.86        0.86        36.0
+
+--- CONFUSION MATRIX ---
+            Pred ESI-1  Pred ESI-2  Pred ESI-3  Pred ESI-4  Pred ESI-5
+True ESI-1          12           2           0           0           0
+True ESI-2           0          11           0           0           0
+True ESI-3           0           2           3           0           0
+True ESI-4           0           0           0           4           0
+True ESI-5           0           0           0           1           1
+2025-07-30 23:18:17,811 - esi_classification - INFO - save_experiment_results:457 - All results saved to: results/20250730_231450_gpt-4.1_ESI_vv4.5
+2025-07-30 23:18:17,811 - esi_classification - INFO - main:524 - Experiment completed successfully in 206.5 seconds.
