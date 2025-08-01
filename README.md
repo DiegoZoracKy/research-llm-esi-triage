@@ -78,14 +78,15 @@ The script will create a new directory inside the `results/` folder for each run
 
 ## 📂 Understanding the Results
 
-For each run, a new folder will be created, for example: `results/20250731_010444_gpt-4.1_ESI_v4.5/`. Inside it, you will find:
+For each run, a new folder will be created, for example: `results/20250730_231450_gpt-4.1_ESI_vv4.5/`. Inside it, you will find:
 
-* `predictions.csv`: The most detailed file, with a row for each patient, including the exact prompt sent, the raw LLM response, the extracted prediction, and the actual value.
-* `metrics.json`: All performance metrics (accuracy, Kappa, F-1 score, etc.) in a structured JSON format.
-* `metadata.json`: The complete "recipe" for the experiment, including the configuration used and the prompt templates.
-* `summary_report.txt`: A human-readable summary of the results, ideal for a quick analysis.
-* `confusion_matrix.png`: A visualization of the confusion matrix, ready to be used in presentations or the paper.
-* `experiment.log`: A detailed log of the entire script execution, useful for debugging.
+* [`predictions.csv`](./results/20250730_231450_gpt-4.1_ESI_vv4.5/predictions.csv): The most detailed file, with a row for each patient, including the exact prompt sent, the raw LLM response, the extracted prediction, and the actual value.
+* [`metrics.json`](./results/20250730_231450_gpt-4.1_ESI_vv4.5/metrics.json): All performance metrics (accuracy, Kappa, F-1 score, etc.) in a structured JSON format.
+* [`metadata.json`](./results/20250730_231450_gpt-4.1_ESI_vv4.5/metadata.json): The complete "recipe" for the experiment, including the configuration used and the prompt templates.
+* [`summary_report.txt`](./results/20250730_231450_gpt-4.1_ESI_vv4.5/summary_report.txt): A human-readable summary of the results, ideal for a quick analysis.
+* [`confusion_matrix.png`](./results/20250730_231450_gpt-4.1_ESI_vv4.5/confusion_matrix.png): A visualization of the confusion matrix, ready to be used in presentations or the paper.
+* [`confusion_matrix.csv`](./results/20250730_231450_gpt-4.1_ESI_vv4.5/confusion_matrix.csv): The data for the confusion matrix in CSV format.
+* [`experiment.log`](./results/20250730_231450_gpt-4.1_ESI_vv4.5/experiment.log): A detailed log of the entire script execution, useful for debugging.
 * `error_cases.csv`: If any errors occur, this file will contain the cases that failed, to facilitate analysis.
 
 ## 📄 License
