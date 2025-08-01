@@ -88,16 +88,6 @@ For each run, a new folder will be created, for example: `results/20250731_01044
 * `experiment.log`: A detailed log of the entire script execution, useful for debugging.
 * `error_cases.csv`: If any errors occur, this file will contain the cases that failed, to facilitate analysis.
 
-## CITATION
-
-If you use this code or its results in your research, we kindly ask that you cite this repository directly. As the accompanying paper is not yet published, citing the software ensures that the work is properly credited.
-
-You can use the following format:
-
-```
-Diego Zoracky W. Oliveira, et al. (2025). LLM Performance in ESI Triage Classification (Version 4.5) [Software]. Available from [https://github.com/DiegoZoracKy/research-llm-esi-triage](https://github.com/DiegoZoracKy/research-llm-esi-triage).
-```
-
 ## 📄 License
 
 This project is licensed under the MIT License. See the `LICENSE` file for more details.
