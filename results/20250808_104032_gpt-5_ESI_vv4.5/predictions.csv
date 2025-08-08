@@ -1,0 +1,978 @@
+original_index,actual_esi,predicted_esi,status,error_type,user_prompt,response,processing_time
+2,2,2,success,,"Structured clinical data:
+锘縮ubject_id: 18530850
+intime: 2167-2-12 23:52
+outtime: 2167-2-13 17:15
+gender: M
+race: WHITE
+arrival_transport: AMBULANCE
+disposition: HOME
+temperature: 96.6
+heartrate: 85
+resprate: 16
+o2sat: 97
+sbp: 184
+pain: 10
+chiefcomplaint: Epigastric pain
+age: 62
+original_index: 2
+
+Triage narrative:
+""""""A 61-year-old male presented to the emergency department via ambulance with a chief complaint of severe right upper quadrant abdominal pain, rated 10/10, accompanied by nausea, vomiting, constipation, and reduced oral intake. He has a significant medical history, including coronary artery disease, hypertension, hyperlipidemia, left ventricular hypertrophy, cholelithiasis, diverticulosis, colon adenoma, and a previous lacunar infarction. Earlier in the day, he was discharged with a diagnosis of gallstones and advised to follow up for surgery but returned with exacerbated symptoms. On arrival, his vital signs showed hypertension (BP 184/0) and hypothermia (T 96.6掳F).""""""
+
+Please provide your clinical reasoning followed by the ESI level:","Reasoning:
+- Airway, breathing, circulation are stable: HR 85, RR 16, O2 sat 97%. No immediate life-saving intervention required, so not ESI-1.
+- Triage narrative describes 10/10 right upper quadrant abdominal pain with vomiting and poor oral intake, returning after recent discharge for gallstones. Age 61 with significant comorbidities (CAD, HTN, LVH). Mild hypothermia (96.6 F) and severe hypertension.
+- Severe pain (≥7/10) meets ESI level-2 criterion for severe pain/distress. Additionally, this presentation is high risk for acute biliary pathology (cholecystitis/cholangitis/pancreatitis) and warrants time-sensitive evaluation and analgesia.
+- Anticipated resources: labs (CBC, CMP/LFTs, lipase), RUQ ultrasound/possibly CT, ECG (epigastric pain with CAD), IV fluids, IV antiemetics/analgesics, potential surgical consult—would be 2+ resources if not for high-risk features.
+
+2",18.916732788085938
+4,1,1,success,,"Structured clinical data:
+锘縮ubject_id: 16307504
+intime: 2158-10-24 3:35
+outtime: 2158-10-24 8:58
+gender: M
+race: WHITE
+arrival_transport: AMBULANCE
+disposition: ADMITTED
+pain: uta
+chiefcomplaint: Chest pain
+age: 64
+original_index: 4
+
+Triage narrative:
+""""""A 63-year-old male with a history of aortic regurgitation, mechanical aortic valve placement, ascending aortic aneurysm repair, diabetes, hypertension, and hyperlipidemia presents to the ED via ambulance with a chief complaint of palpitations and dizziness. On arrival, vital signs were absent, indicating a potential cardiac emergency. The patient has a history of ventricular tachycardia and recent ICD placement. For the past two days, he experienced lightheadedness, resolving initially but recurring last night. He denies recent chest pain, fever, cough, leg pain, swelling, abdominal pain, nausea, or vomiting. He has no known allergies. Immediate resuscitation with ACLS measures is required.""""""
+
+Please provide your clinical reasoning followed by the ESI level:","- Structured data review: 64-year-old male, arrived by ambulance, chief complaint listed as chest pain; admitted. High-risk cardiac history.
+- Triage narrative analysis: Reports palpitations/dizziness with history of VT and recent ICD. Critically, “vital signs were absent on arrival” and “Immediate resuscitation with ACLS measures is required,” indicating cardiac arrest or pulseless unstable rhythm.
+- ESI decision: The need for immediate life-saving interventions (ACLS/CPR/defibrillation) makes this an ESI Level 1 by definition.
+
+1",7.779266119003296
+5,2,2,success,,"Structured clinical data:
+锘縮ubject_id: 10183043
+intime: 2146-6-5 9:20
+outtime: 2146-6-5 21:39
+gender: M
+race: WHITE
+arrival_transport: WALK IN
+disposition: ADMITTED
+temperature: 98.9
+heartrate: 91
+resprate: 22
+o2sat: 97
+sbp: 119
+dbp: 71
+pain: 8
+chiefcomplaint: Chest pain, Dyspnea
+age: 53
+original_index: 5
+
+Triage narrative:
+""""""53-year-old white male with a history of HCV/EtOH cirrhosis (on Harvoni), COPD with ongoing tobacco use, IDDM, and jugular vein thrombosis (on warfarin), presented to the ED with a chief complaint of chest pain and dyspnea. The patient was referred from a liver clinic due to a 3-day history of intermittent, productive cough with scant yellow sputum and sharp, central chest pain that occurs with coughing. The patient also reported fatigue, mild dyspnea on exertion, and wheezing. There were no symptoms of dyspnea at rest, upper respiratory symptoms, subjective fevers, chills, headache, nausea, vomiting, diarrhea, abdominal pain, dysuria, rashes, melena, hematochezia, orthopnea, paroxysmal nocturnal dyspnea (PND), or edema. The patient walked into the ED and has allergies to codeine and penicillins. BP 119/71, P 91, RR 22, SpO2 97%, T 98.9掳 F, Pain 8.""""""
+
+Please provide your clinical reasoning followed by the ESI level:","Reasoning:
+- No immediate life-saving intervention needed: walked in, BP 119/71, HR 91, SpO2 97% RA, no distress reported; not ESI 1.
+- High-risk presentation: adult with chest pain and dyspnea, severe pain (8/10), mild tachypnea (RR 22), significant comorbidities (COPD, diabetes, on warfarin with prior thrombosis). Even though pain is cough-associated, chest pain in this context warrants time-sensitive workup (ECG, troponins, CXR; likely nebs/steroids, possible anticoagulation/PE eval).
+- Meets ESI Level 2 criteria for high-risk complaint and severe pain.
+
+2",18.21199131011963
+7,1,1,success,,"Structured clinical data:
+锘縮ubject_id: 15015856
+intime: 2186-1-13 21:11
+outtime: 2186-1-13 23:50
+gender: M
+race: WHITE
+arrival_transport: AMBULANCE
+disposition: ADMITTED
+chiefcomplaint: Unresponsive, Respiratory distress
+age: 91
+original_index: 7
+
+Triage narrative:
+""""""The patient is a 91-year-old male with a recent history of a massive stroke two weeks ago, leading to decreased responsiveness and respiratory distress. He arrived at the ED unresponsive. Initial vital signs indicated hypotension (73/48) and a heart rate of 105. The patient was obtunded with shallow respirations. He was transported by ambulance and had no known allergies.""""""
+
+Please provide your clinical reasoning followed by the ESI level:","Clinical reasoning:
+- Presentation: 91-year-old male, unresponsive/obtunded with shallow respirations and respiratory distress after recent massive stroke.
+- Vitals: Hypotension (73/48) and tachycardia (HR 105) indicating shock; high risk for respiratory failure.
+- Immediate needs: Life-saving interventions required (airway protection/intubation, oxygen/ventilation support, IV access with fluids, likely vasopressors, continuous monitoring).
+- ESI criteria: Unresponsive with severe respiratory compromise and hypotension meets ESI Level 1 (immediate life-saving intervention).
+
+1",9.793166399002075
+8,2,2,success,,"Structured clinical data:
+锘縮ubject_id: 12615920
+intime: 2164-5-8 12:12
+outtime: 2164-5-8 20:35
+gender: M
+race: WHITE
+arrival_transport: AMBULANCE
+disposition: ADMITTED
+temperature: 97.9
+heartrate: 87
+resprate: 18
+o2sat: 94
+sbp: 180
+dbp: 104
+pain: 10
+chiefcomplaint: Difficulty swallowing, Transfer
+age: 64
+original_index: 8
+
+Triage narrative:
+""""""64-year-old white male with a history of type II diabetes mellitus, hypercholesterolemia, depression, anxiety, and chronic neck and low back pain. Recently underwent C5 corpectomy and C6-7 ACDF. He presents with difficulty swallowing, increased swelling around the surgical incision, and hoarseness. Unable to swallow pills or water, regurgitating attempts. Reports no stridor or breathing difficulties. Recently used cocaine, contributing to hypertensive urgency with BP at 180/104, headache, and chest pain. Arrived by ambulance, allergic to Tegretol.""""""
+
+Please provide your clinical reasoning followed by the ESI level:","Clinical reasoning:
+- ABCs: Airway currently patent but threatened. He has postoperative anterior cervical spine surgery with new neck swelling, hoarseness, and inability to swallow pills or water—classic red flags for a developing neck hematoma or edema with potential for rapid airway compromise. No stridor yet and normal RR/O2 for now, so not needing immediate life-saving intervention at presentation.
+- Breathing: RR 18, SpO2 94%, no reported dyspnea/stridor—adequate at this moment.
+- Circulation: Marked hypertension (180/104) after recent cocaine use, with headache and chest pain—high-risk for ACS/aortic pathology/hypertensive emergency.
+- Disability: No altered mental status noted. Pain 10/10.
+- High-risk features: Post-op neck swelling with dysphagia/hoarseness (threatened airway), plus cocaine-associated chest pain with severe hypertension. Both are time-critical, high-risk conditions requiring rapid evaluation and multiple resources (airway readiness, ENT/Neurosurg consults, stat imaging, ECG/troponins, labs, IV meds).
+
+Conclusion:
+- Does not meet ESI 1 because no immediate life-saving intervention is required at this moment.
+- Meets ESI 2 due to high-risk presentation with potential for rapid deterioration and time-sensitive workup.
+
+2",28.282530546188354
+9,2,1,success,,"Structured clinical data:
+锘縮ubject_id: 13575992
+intime: 2170-6-7 17:46
+outtime: 2170-6-7 21:34
+gender: M
+race: WHITE
+arrival_transport: UNKNOWN
+disposition: ADMITTED
+temperature: 95.6
+heartrate: 79
+resprate: 20
+o2sat: 96
+sbp: 136
+dbp: 84
+pain: 13
+chiefcomplaint: #NAME?
+age: 55
+original_index: 9
+
+Triage narrative:
+""""""A 49-year-old male with a significant medical history including end-stage renal disease on hemodialysis, coronary artery disease, congestive heart failure, type 2 diabetes mellitus, and recent hospitalization for wet gangrene and osteomyelitis, presents with fever and signs of sepsis, including hypotension and tachycardia. The patient also exhibits intermittent agitation and anxiety. He is allergic to dobutamine.""""""
+
+Please provide your clinical reasoning followed by the ESI level:","Clinical reasoning:
+- Structured data show stable vitals, though temperature is low (95.6), which can be a sepsis red flag. However, the disposition is admission, suggesting significant illness. Structured vitals may be from a different time point.
+- Triage narrative is high priority: patient with ESRD on HD, CAD, CHF, DM2, recent wet gangrene/osteomyelitis, now with fever and sepsis featuring hypotension and tachycardia, plus intermittent agitation. This constellation indicates septic shock or impending shock.
+- ESI step 1: Does the patient require immediate life-saving intervention? Yes—hemodynamic instability (hypotension in sepsis) requires immediate IV access, aggressive fluids, possible vasopressors, and emergent antibiotics. This meets criteria for ESI Level 1.
+- If hypotension were not present, this would be ESI 2 due to high-risk sepsis, but the narrative specifically states hypotension.
+
+1",21.251068353652954
+10,2,2,success,,"Structured clinical data:
+锘縮ubject_id: 11124151
+intime: 2122-7-15 14:56
+outtime: 2122-7-15 21:49
+gender: M
+race: BLACK/AFRICAN AMERICAN
+arrival_transport: WALK IN
+disposition: ADMITTED
+temperature: 97.5
+heartrate: 86
+resprate: 18
+o2sat: 99
+sbp: 139
+dbp: 84
+pain: 5
+chiefcomplaint: Chest pain
+age: 55
+original_index: 10
+
+Triage narrative:
+""""""A 49-year-old African American male presents to the ED with a chief complaint of chest pain. He has a significant medical history, including paroxysmal atrial fibrillation (currently not on anticoagulation), cervical cord compression with associated complications, and a history of substance use (tobacco, alcohol, and IVDU on methadone). The patient describes his chest pain as sub-sternal, radiating to the left arm and jaw, with associated diaphoresis, shortness of breath, and palpitations. The pain occurs at rest, and he reports worsening orthopnea over the past two months. Vital signs are stable, and he has no known drug allergies. The patient walked into the ED and is currently not on anticoagulation despite atrial fibrillation.""""""
+
+Please provide your clinical reasoning followed by the ESI level:","Clinical reasoning:
+- Structured data: Vitals stable (HR 86, RR 18, SpO2 99%, BP 139/84), walked in, chest pain, moderate pain score. No immediate airway/breathing/circulation compromise → does not meet Level 1.
+- Triage narrative: Classic high-risk features for acute coronary syndrome—substernal chest pain radiating to left arm/jaw, diaphoresis, dyspnea, palpitations, occurring at rest; worsening orthopnea suggests possible heart failure component. History of paroxysmal atrial fibrillation (currently not anticoagulated) adds cardiac risk. These features make this a high-risk, time-sensitive condition despite normal vitals.
+- Anticipated resources: Immediate ECG, cardiac enzymes, CXR, possible IV meds/antiplatelets/anticoagulation, cardiology consult, possible admission. However, the high-risk presentation itself places him at ESI 2.
+
+2",12.337675333023071
+11,1,1,success,,"Structured clinical data:
+锘縮ubject_id: 17229504
+intime: 2179-5-23 19:07
+outtime: 2179-5-23 23:28
+gender: F
+race: WHITE
+arrival_transport: AMBULANCE
+disposition: ADMITTED
+temperature: 98.8
+heartrate: 150
+resprate: 20
+o2sat: 97
+sbp: 120
+dbp: 58
+pain: 0
+chiefcomplaint: Fever, Pneumonia, Transfer
+age: 78
+original_index: 11
+
+Triage narrative:
+""""""A 78-year-old white female with a complex medical history including hypertension, type 2 diabetes mellitus, hypothyroidism, chronic kidney disease stage 3, polymyalgia rheumatica, hyperlipidemia, anemia, hyperparathyroidism, and recent metastatic malignancy status post resection of a cerebellar mass presents to the emergency department with fever, presumed pneumonia, and shock. She arrives via ambulance. The patient has experienced severe hypotension and supraventricular tachycardia (SVT). She was recently intubated for airway protection and had a central line placed for vascular access. Her vital signs on arrival were BP 120/58, HR 150, RR 20, SpO2 97%, and temperature 98.8掳 F, with no reported pain. The patient has a known allergy to penicillins.""""""
+
+Please provide your clinical reasoning followed by the ESI level:","- Initial assessment: 78-year-old with presumed pneumonia/sepsis, reported shock with severe hypotension and SVT; arrived via ambulance. Current vitals: HR 150, BP 120/58, RR 20, SpO2 97%, afebrile on arrival. Pain 0.
+- Critical context from narrative: Recently intubated for airway protection and had a central line placed; high-risk condition (sepsis with shock, unstable tachyarrhythmia). These are life-threatening processes requiring immediate/ongoing life-saving interventions (airway/ventilation management, vasoactive support, potential cardioversion/antiarrhythmics).
+- ESI decision: Regardless of currently acceptable BP and SpO2, the need for immediate life-saving interventions (intubation/ventilatory support, hemodynamic management) and presence of shock/SVT make this ESI Level 1.
+
+1",16.646055221557617
+12,1,1,success,,"Structured clinical data:
+锘縮ubject_id: 12629893
+intime: 2153-4-6 13:06
+outtime: 2153-4-6 17:53
+gender: M
+race: WHITE - RUSSIAN
+arrival_transport: AMBULANCE
+disposition: ADMITTED
+heartrate: 58
+o2sat: 96
+sbp: 74
+dbp: 47
+pain: 13
+chiefcomplaint: Weakness, Hypotension
+age: 75
+original_index: 12
+
+Triage narrative:
+""""""A 70-year-old male with a history of coronary artery disease, heart failure, COPD, and presumed cholangiocarcinoma presents to the ED via ambulance with weakness, fatigue, and hypotension (BP 74/47, P 58). He is on home oxygen (3L O2 by nasal cannula) and reports decreased oral intake, generalized weakness, dehydration, and nausea with nonbloody emesis. Allergies include penicillins, lisinopril, angiotensin receptor antagonist, nifedipine, and furosemide. The patient expressed a strong desire for comfort measures, opting to avoid further invasive procedures.""""""
+
+Please provide your clinical reasoning followed by the ESI level:","Reasoning:
+- Structured data shows severe hypotension (SBP 74/47) with bradycardia (HR 58) in a 75-year-old arriving by ambulance; O2 sat 96% (on home 3L NC).
+- Triage narrative confirms symptomatic hypotension with weakness, fatigue, nausea/vomiting and dehydration; significant comorbidities (CAD, heart failure, COPD, cancer).
+- This presentation is consistent with shock and requires immediate life-saving hemodynamic support (IV access, rapid IV fluids, possible vasopressors, continuous monitoring). Bradycardia with hypotension increases risk for instability.
+- Patient’s preference for comfort measures does not reduce triage acuity; ESI is based on need for immediate life-saving intervention.
+
+1",27.034918546676636
+14,3,2,success,,"Structured clinical data:
+锘縮ubject_id: 13693875
+intime: 2156-12-17 17:47
+outtime: 2156-12-17 22:22
+gender: F
+race: WHITE - RUSSIAN
+arrival_transport: AMBULANCE
+disposition: ADMITTED
+temperature: 98.5
+heartrate: 95
+resprate: 18
+o2sat: 100
+sbp: 160
+dbp: 54
+pain: 0
+chiefcomplaint: Dyspnea, Pedal edema
+age: 83
+original_index: 14
+
+Triage narrative:
+""""""A 72-year-old female with a complex medical history including heart failure, aortic stenosis, history of strokes, COPD, and chronic urinary retention with a Foley catheter, presents to the emergency department with shortness of breath, chest pain, and bilateral pedal edema. The patient reports a one-week history of worsening shortness of breath and pedal edema, along with intermittent left-sided chest and arm pain. On the day of admission, she experienced worsening shortness of breath, requiring oxygen supplementation. The patient denies cough, fever, abdominal pain, or recent weight gain. She was transported by ambulance and has no known drug allergies.""""""
+
+Please provide your clinical reasoning followed by the ESI level:","Reasoning:
+- Initial assessment: Vitals are not in an immediate danger zone (HR 95, RR 18, SpO2 100% likely on supplemental O2, BP elevated but perfusing). No immediate life-saving intervention required → not ESI 1.
+- High-risk features from narrative: Elderly patient with significant cardiac comorbidities (heart failure, aortic stenosis, prior strokes, COPD) presenting with worsening shortness of breath requiring oxygen, intermittent left-sided chest and arm pain, and bilateral pedal edema. This constellation is high-risk for acute decompensated heart failure and/or acute coronary syndrome, both time-sensitive conditions requiring prompt evaluation.
+- Expected resources: ECG, cardiac enzymes, chest X-ray, labs, IV diuretics/other IV meds, possible cardiology consult and admission (indeed admitted). While she will need multiple resources, the high-risk presentation elevates to ESI 2.
+
+2",57.62596321105957
+15,3,3,success,,"Structured clinical data:
+锘縮ubject_id: 14111050
+intime: 2193-10-16 10:50
+outtime: 2193-10-16 12:52
+gender: M
+race: WHITE
+arrival_transport: WALK IN
+disposition: ADMITTED
+temperature: 97.8
+heartrate: 98
+resprate: 18
+o2sat: 100
+sbp: 126
+dbp: 71
+pain: 8
+chiefcomplaint: RECTAL ABSCESS
+age: 46
+original_index: 15
+
+Triage narrative:
+""""""A 41-year-old white male with a complex medical history including HIV, diabetes mellitus type 2, hidradenitis suppurativa, chronic renal insufficiency, hyperlipidemia, asthma, obstructive sleep apnea, and obesity, presents with a chief complaint of perianal abscess. The patient experiences significant pain exacerbated by sitting, similar to previous abscess episodes, but denies fever, chills, drainage, diarrhea, or bloody stools. He has a history of internal anal condylomata excision and appendectomy. The patient is allergic to erythromycin base. He walked into the ED with vital signs: HR 98, RR 18, BP 126/71, SpO2 100%, Temp 97.8掳F, and pain rated 8.""""""
+
+Please provide your clinical reasoning followed by the ESI level:","Reasoning:
+- Step 1 (ESI-1 screening): Patient is alert, hemodynamically stable, no respiratory distress, normal oxygen saturation, no immediate life-saving intervention required. Not ESI-1.
+- Step 2 (ESI-2 high-risk/severe distress?): Chief complaint is perianal/rectal abscess with significant pain (8/10), but patient is nontoxic with normal vitals and no fever/chills or systemic symptoms. Comorbidities (HIV, DM2, CKD, obesity) increase risk for deeper infection, but current presentation is stable without signs of sepsis or necrotizing infection. Pain is significant but no evident severe distress. Does not clearly meet high-risk/time-critical threshold for ESI-2.
+- Step 3 (Resource prediction):
+  - Likely needs 2+ resources: labs (CBC, BMP), imaging (CT pelvis or ultrasound), IV analgesia/antibiotics, procedural I&D, and surgical/colorectal consult.
+  - Therefore meets ESI-3 criteria (stable but requires multiple resources).
+- Disposition was admission, which is consistent with ESI-3 or ESI-2; given stability and absence of time-critical features, ESI-3 is most appropriate.
+
+3",27.302561044692993
+17,1,1,success,,"Structured clinical data:
+锘縮ubject_id: 11671350
+intime: 2153-11-2 18:35
+outtime: 2153-11-2 21:15
+gender: M
+race: UNKNOWN
+arrival_transport: UNKNOWN
+disposition: ADMITTED
+pain: unable
+chiefcomplaint: Transfer, Intubated
+age: 73
+original_index: 17
+
+Triage narrative:
+""""""A 72-year-old male with a complex medical history, including COPD on home O2, atrial fibrillation (on Pradaxa), coronary artery disease with a history of myocardial infarction, bladder cancer, melanoma, hypertension, hyperlipidemia, rheumatoid arthritis, and moderate pulmonary hypertension, was transferred to the ED intubated due to severe respiratory failure. The patient had been discharged the previous day after a COPD exacerbation but became progressively dyspneic, leading to intubation for hypoxemic and hypercarbic respiratory failure. On arrival, the patient was sedated and intubated, with a history of recent use of accessory muscles and diffuse wheezing. The patient's wife reported recent cold virus exposure and progressive dyspnea post-discharge.""""""
+
+Please provide your clinical reasoning followed by the ESI level:","Clinical reasoning:
+- Structured data shows chief complaint “Transfer, Intubated,” age 73, admitted. Pain unable to be assessed. Disposition to admission suggests high acuity.
+- Triage narrative confirms recent severe hypoxemic/hypercarbic respiratory failure after COPD exacerbation, requiring endotracheal intubation and ongoing mechanical ventilation with sedation on arrival.
+- ESI assessment:
+  - Level 1 criteria: immediate life-saving intervention needed (airway/breathing). An intubated patient on mechanical ventilation requires ongoing life-saving airway/ventilatory management and continuous critical care. This exceeds high-risk (Level 2) and clearly meets Level 1.
+
+1",17.225522994995117
+18,1,1,success,,"Structured clinical data:
+锘縮ubject_id: 10423466
+intime: 2133-7-2 13:50
+outtime: 2133-7-2 16:17
+gender: F
+race: WHITE
+arrival_transport: AMBULANCE
+disposition: ADMITTED
+chiefcomplaint: ALTERED LEVEL OF CONSCIOUSNESS
+age: 76
+original_index: 18
+
+Triage narrative:
+""""""A 76-year-old white female with a history of gliomatosis cerebri and seizure disorder was found unresponsive by her daughter. The patient was normal last night but showed confusion and disorientation before bed. This morning, she was found unresponsive in bed, not moving her left side, foaming at the mouth, and incontinent of urine. Upon EMS arrival, she was not protecting her airway and was intubated for airway protection. Neurological examination revealed eye deviation to the right and left-sided hemiparesis. Her past medical history includes hypercholesterolemia, hypothyroidism, leukopenia, polymyalgia rheumatica, hematuria, and optic disc drusen. No known allergies. She arrived by ambulance. Immediate neurological and cardiac assessments are essential.""""""
+
+Please provide your clinical reasoning followed by the ESI level:","Clinical reasoning:
+- ABCs: Patient was found unresponsive, not protecting airway, and was intubated by EMS for airway protection. Intubation/ventilatory support is an immediate life-saving intervention.
+- Neurologic findings (gaze deviation, left hemiparesis, foaming at the mouth, incontinence) suggest seizure and/or acute stroke, both high-risk, time-critical conditions, but the need for airway intervention elevates to ESI 1.
+- Arrival by ambulance and ongoing critical care needs (ventilation, emergent neuro/cardiac evaluation) further support Level 1.
+
+1",9.0127112865448
+19,1,1,success,,"Structured clinical data:
+锘縮ubject_id: 11729569
+intime: 2168-1-30 3:31
+outtime: 2168-1-30 5:09
+gender: F
+race: WHITE - RUSSIAN
+arrival_transport: AMBULANCE
+disposition: ADMITTED
+resprate: 38
+chiefcomplaint: DYSPNEA
+age: 83
+original_index: 19
+
+Triage narrative:
+""""""82-year-old White Russian female with a history of CAD, DM II, HTN, and metastatic renal cell carcinoma, recently discharged after a CHF exacerbation requiring non-invasive positive pressure ventilation. She presents with acute shortness of breath and decompensated to acute respiratory failure in the ED. She has a history of multiple hospitalizations for pneumonia, NSTEMI, STEMI, and sCHF exacerbation. Accompanied by her granddaughter, she developed acute respiratory distress at her nursing facility before being transferred to the ED. In the ED, initial vital signs: 160 160/80 35.""""""
+
+Please provide your clinical reasoning followed by the ESI level:","Step-by-step reasoning:
+1) Structured data review:
+- 83-year-old female arriving by ambulance with chief complaint of dyspnea
+- Respiratory rate 38 (marked tachypnea)
+- Disposition: admitted
+2) Triage narrative analysis:
+- Acute respiratory distress at nursing facility; in ED she “decompensated to acute respiratory failure”
+- Initial vitals consistent with instability: HR ~160, BP 160/80, RR ~35
+- Significant cardiopulmonary history (CAD, CHF with prior NIPPV, recurrent pneumonias)
+3) ESI determination:
+- The patient is in severe respiratory distress with decompensation to acute respiratory failure in the ED, indicating need for immediate life-saving airway/breathing intervention (e.g., NIPPV/intubation). This meets ESI Level 1 criteria.
+4) Final ESI level:
+- Immediate life-saving intervention required → Level 1
+
+1",35.248157024383545
+21,3,3,success,,"Structured clinical data:
+锘縮ubject_id: 19880634
+intime: 2199-10-8 16:40
+outtime: 2199-10-9 2:19
+gender: F
+race: WHITE
+arrival_transport: WALK IN
+disposition: HOME
+temperature: 98.3
+heartrate: 75
+resprate: 14
+o2sat: 100
+sbp: 138
+dbp: 90
+pain: 7
+chiefcomplaint: Lower abdominal pain
+age: 50
+original_index: 21
+
+Triage narrative:
+"""""" 49-year-old white female presented to the ED with a chief complaint of lower abdominal pain rated as 7/10. The patient arrived by walking in. Upon arrival, her vital signs were stable: heart rate 75, respiratory rate 14, blood pressure 138/90, SpO2 100%, and temperature 98.3掳F.""""""
+
+Please provide your clinical reasoning followed by the ESI level:","Reasoning:
+- Step 1 (Life-saving intervention?): No. Patient is hemodynamically stable, normal respirations, oxygenation 100%, walked in.
+- Step 2 (High-risk, AMS, or severe pain/distress?): Lower abdominal pain could represent a high-risk diagnosis, but the narrative shows no red flags (no fever, vomiting, syncope, vaginal bleeding, pregnancy concerns, peritoneal signs, or distress). Pain is 7/10, but no observed severe distress is documented. Therefore, does not meet ESI 2 based on available info.
+- Step 3 (Resources): Likely needs 2+ resources: labs (CBC, CMP, UA, urine hCG), imaging (pelvic US or CT), possibly analgesia/IV fluids. This places her at ESI 3.
+- Step 4 (Vitals danger zone?): Vitals are within normal limits.
+
+3",18.533926010131836
+22,2,2,success,,"Structured clinical data:
+锘縮ubject_id: 16021172
+intime: 2173-8-19 6:57
+outtime: 2173-8-19 11:25
+gender: M
+race: WHITE
+arrival_transport: AMBULANCE
+disposition: ADMITTED
+temperature: 97.7
+heartrate: 120
+resprate: 18
+o2sat: 93
+sbp: 168
+dbp: 106
+pain: 0
+chiefcomplaint: ALTERED LEVEL OF CONSCIOUSNESS
+age: 67
+original_index: 22
+
+Triage narrative:
+""""""A 62-year-old white male with a history of esophageal cancer (status post-esophagectomy), right-sided CVA, chronic pain syndrome on chronic opioids, COPD, and depression presents to the ED with altered mental status. The patient's wife found him having a bizarre conversation, not oriented to date or time, and he had fallen without head trauma. Suspected factors for AMS include possible narcotic overdose (pinpoint pupils, slurred speech). The patient has chronic left-sided weakness post-CVA and was found with a pill bottle, suggesting an extra dose of oxycontin may have been taken. The patient was transported by ambulance and has no known drug allergies. He is alert to person and place but complains of significant thirst.""""""
+
+Please provide your clinical reasoning followed by the ESI level:","Clinical reasoning:
+- Primary survey: Airway patent; patient is speaking. Breathing: RR 18 with SpO2 93%—borderline but not in severe distress; can provide supplemental O2. Circulation: tachycardic (HR 120), hypertensive (168/106), but perfusing; no hypotension. No immediate life-saving intervention required at this moment, so not ESI-1.
+- High-risk features: Altered mental status (disoriented), suspected opioid overdose (pinpoint pupils, slurred speech, pill bottle, chronic opioids), recent fall, history of CVA and COPD. These constitute a high-risk, time-sensitive presentation with potential for rapid deterioration (respiratory depression, intracranial event).
+- Resources anticipated: Multiple (labs including tox screen, VBG/ABG, ECG, head CT given AMS/fall, CXR, possible naloxone, IV access/fluids, possible specialty consult). Even without resource count, the high-risk AMS places this at ESI-2.
+
+2",55.94655251502991
+23,3,3,success,,"Structured clinical data:
+锘縮ubject_id: 16839087
+intime: 2132-6-7 20:58
+outtime: 2132-6-8 1:15
+gender: F
+race: WHITE
+arrival_transport: AMBULANCE
+disposition: HOME
+temperature: 98.4
+heartrate: 65
+resprate: 16
+o2sat: 94
+sbp: 143
+dbp: 72
+pain: 9
+chiefcomplaint: Acute Pelvic pain
+age: 68
+original_index: 23
+
+Triage narrative:
+""""""A 61-year-old white female was brought to the emergency department by ambulance with a chief complaint of acute pelvic pain. Her vital signs were BP 143/72, pulse 65, respiratory rate 16, SpO2 94%, and temperature 98.4掳F. The patient reported a severe pain level of 9 out of 10. She had no known allergies and no previous medical history was provided.""""""
+
+Please provide your clinical reasoning followed by the ESI level:","Reasoning:
+- Step 1 (Life-saving intervention?): No. Airway, breathing, circulation stable; BP 143/72, HR 65, RR 16, SpO2 94%, afebrile. No evidence of immediate life threat.
+- Step 2 (High risk/AMS/severe distress): Acute pelvic/abdominal pain in an older adult can represent high-risk etiologies, but triage narrative does not indicate red flags (no hypotension, syncope, diaphoresis, AMS, or peritoneal signs). Pain is severe (9/10), but without documented severe distress; severe pain alone does not mandate Level 2.
+- Step 3 (Resources): Anticipated 2+ resources: labs (CBC, BMP, UA), imaging (pelvic ultrasound and/or CT A/P), IV analgesia ± fluids, possibly specialty consult. 
+- Step 4 (Danger zone vitals for ESI 3): Vitals not in danger zone; SpO2 94% (>92%), HR and RR normal.
+
+Final ESI level:
+3",30.8432400226593
+26,1,1,success,,"Structured clinical data:
+锘縮ubject_id: 16454913
+intime: 2146-4-26 8:42
+outtime: 2146-4-26 11:08
+gender: M
+race: WHITE
+arrival_transport: AMBULANCE
+disposition: ADMITTED
+chiefcomplaint: SEPSIS
+age: 55
+original_index: 26
+
+Triage narrative:
+""""""A 52-year-old white male with a complex medical history was brought to the ED via ambulance with a chief complaint of sepsis and hypotension. On arrival, the patient was critically hypotensive and required immediate hemodynamic stabilization. His condition is complicated by infected sacral decubitus wounds. The patient is receiving mechanical ventilation due to respiratory failure and is on dialysis for renal failure. Immediate attention is focused on stabilizing his vital signs and managing infections.""""""
+
+Please provide your clinical reasoning followed by the ESI level:","Reasoning:
+- Arrival with sepsis and critical hypotension requiring immediate hemodynamic stabilization indicates need for life-saving interventions (IV fluids, vasopressors).
+- Patient is already on mechanical ventilation for respiratory failure, which is a life-saving measure.
+- High-risk condition with unstable vitals and multi-organ involvement (respiratory failure, renal failure on dialysis, infected decubitus wounds).
+- This meets ESI Level 1 criteria: immediate life-saving intervention needed.
+
+1",5.199378490447998
+28,2,2,success,,"Structured clinical data:
+锘縮ubject_id: 14147591
+intime: 2129-7-7 10:54
+outtime: 2129-7-7 13:39
+gender: M
+race: ASIAN - CHINESE
+arrival_transport: AMBULANCE
+disposition: ADMITTED
+temperature: 97.0
+heartrate: 108
+resprate: 22
+o2sat: 97
+sbp: 198
+dbp: 107
+pain: 0
+chiefcomplaint: N/V, Weakness
+age: 59
+original_index: 28
+
+Triage narrative:
+""""""A 51-year-old Asian male with a past medical history of ESRD secondary to IgA nephropathy, hypertension, adrenal insufficiency, and other comorbidities presented to the ED with nausea, vomiting, and left-sided weakness. The patient was noted to be flaccid on the left side with possible gaze deviation and actively vomiting. Vital signs on arrival were BP 198/107, P 108, RR 22, SpO2 97%, and T 97.0掳 F. He was transported to the ED by ambulance and has an allergy to isoniazid.""""""
+
+Please provide your clinical reasoning followed by the ESI level:","Step-by-step reasoning:
+- Structured data: Arrived by ambulance with tachycardia (HR 108), tachypnea (RR 22), markedly elevated BP (198/107), normal O2 sat (97%), afebrile, pain 0. Chief complaint N/V and weakness. 
+- Triage narrative: Acute focal neuro deficits (flaccid left-sided weakness, possible gaze deviation) with active vomiting in a patient with significant comorbidities (ESRD, HTN). This is highly suggestive of an acute stroke, a time-critical, high-risk condition requiring immediate neuro evaluation and imaging.
+- Airway/breathing/circulation: Despite active vomiting, there is no documentation of airway compromise, hypoxia, severe respiratory distress, or hemodynamic instability necessitating immediate life-saving intervention. Therefore ESI 1 is not met.
+- High-risk assessment: Acute stroke symptoms with ongoing emesis and very high BP represent high-risk, time-sensitive pathology (potential thrombolysis/thrombectomy window, aspiration risk). This meets ESI 2 criteria regardless of resource count.
+- Expected resources (supporting but not primary driver): CT/CTA head and neck, labs, ECG, IV access, IV meds (antiemetics, possible BP management), neurology consult.
+
+Final ESI level:
+2",17.367353200912476
+29,4,4,success,,"Structured clinical data:
+锘縮ubject_id: 13806475
+intime: 2112-2-3 10:26
+outtime: 2112-2-3 17:52
+gender: M
+race: HISPANIC/LATINO - HONDURAN
+arrival_transport: WALK IN
+disposition: HOME
+temperature: 99.0
+heartrate: 90
+resprate: 18
+o2sat: 100
+sbp: 147
+dbp: 87
+pain: 3
+chiefcomplaint: Finger laceration
+age: 26
+original_index: 29
+
+Triage narrative:
+""""""A 26-year-old Hispanic/Latino male arrived at the emergency department with a chief complaint of a finger laceration. The patient walked into the ED, indicating stable condition upon arrival. Vital signs show a blood pressure of 147/87, heart rate of 90 bpm, respiratory rate of 18 breaths per minute, SpO2 of 100%, and a temperature of 99.0掳 F. The patient reports a pain level of 3 out of 10. """"""
+
+Please provide your clinical reasoning followed by the ESI level:","Reasoning:
+- Airway, breathing, circulation intact; vitals stable; walked in; no immediate life-saving intervention needed → not ESI 1.
+- No high-risk features, normal mentation, mild pain, no signs of ischemia/infection or severe bleeding → not ESI 2.
+- Anticipated resources: simple laceration likely requires a single resource (wound repair with sutures/adhesive). No clear indication from the narrative that additional resources (e.g., imaging, specialty consult) are needed. Tetanus need is not specified.
+- Therefore, stable patient likely requiring one resource.
+
+4",22.134735107421875
+30,1,1,success,,"Structured clinical data:
+锘縮ubject_id: 10431675
+intime: 2184-2-17 15:51
+outtime: 2184-2-17 19:56
+gender: M
+race: WHITE
+arrival_transport: UNKNOWN
+disposition: ADMITTED
+pain: Critical
+chiefcomplaint: Found down
+age: 62
+original_index: 30
+
+Triage narrative:
+""""""A 62-year-old white male with a history of syncope and a pacemaker (battery not changed) presented with an out-of-hospital asystolic cardiac arrest. The arrest occurred while swimming, and CPR was initiated by a lifeguard. EMS continued resuscitation en route to the ED, finding the patient in PEA. Upon arrival, he remained pulseless. """"""
+
+Please provide your clinical reasoning followed by the ESI level:","Clinical reasoning:
+- Structured data shows “Found down,” critical pain, and admission—suggests a severe event.
+- Triage narrative confirms out-of-hospital asystolic cardiac arrest with ongoing PEA and pulseless on ED arrival.
+- Patient requires immediate life-saving interventions (CPR/ACLS, airway management, epinephrine). This meets ESI Level 1 criteria.
+- Resource counting is not applicable when immediate life-saving interventions are needed.
+
+1",7.502740383148193
+31,4,4,success,,"Structured clinical data:
+锘縮ubject_id: 14803760
+intime: 2196-9-11 11:47
+outtime: 2196-9-11 14:27
+gender: F
+race: ASIAN - CHINESE
+arrival_transport: WALK IN
+disposition: HOME
+temperature: 97.6
+heartrate: 96
+resprate: 16
+o2sat: 100
+sbp: 179
+dbp: 72
+pain: 3
+chiefcomplaint: Finger laceration
+age: 59
+original_index: 31
+
+Triage narrative:
+""""""A 49-year-old Asian female presented to the ED with a chief complaint of a finger laceration. The patient arrived via walk-in and reports mild pain at a level of 3 out of 10. Vital signs are as follows: BP 179/72, P 96, RR 16, SpO2 100%, T 97.6掳F. The patient appears stable with no immediate life-threatening conditions noted. """"""
+
+Please provide your clinical reasoning followed by the ESI level:","Clinical reasoning:
+- Airway, breathing, circulation intact; vitals largely stable aside from isolated elevated SBP. No respiratory distress, altered mental status, or hemodynamic instability. Not in severe pain (3/10).
+- No high-risk features or time-critical complaints; simple finger laceration in a well-appearing walk-in patient.
+- Anticipated resources: likely one procedure (wound/laceration repair). Labs or imaging not clearly indicated from the narrative. A tetanus booster might be considered but is not certain from the triage information; based on available data, anticipate 1 resource.
+
+4",19.28739309310913
+32,1,2,success,,"Structured clinical data:
+锘縮ubject_id: 14574857
+intime: 2176-6-23 13:18
+outtime: 2176-6-23 22:41
+gender: F
+race: WHITE
+arrival_transport: AMBULANCE
+disposition: ADMITTED
+pain: UA
+chiefcomplaint: MVC, Transfer
+age: 52
+original_index: 32
+
+Triage narrative:
+""""""A 52-year-old female was transferred to the emergency department following a motor vehicle collision involving a tree, with a chief complaint of chest pain. She has a recent diagnosis of COPD, not on home oxygen. Upon arrival, she required oxygen supplementation at 4L to maintain her oxygen saturation above 92%. She has no known drug allergies. The patient arrived by ambulance and is under surgical care for chest tube management and pain control.""""""
+
+Please provide your clinical reasoning followed by the ESI level:","Reasoning:
+- Structured data: 52-year-old female, MVC transfer with chest pain, arrived by ambulance, ultimately admitted.
+- Triage narrative: Recent COPD (not on home O2), now requiring 4 L O2 to maintain SpO2 >92%; under surgical care for chest tube management and pain control after MVC into a tree. Suggests traumatic chest injury (e.g., pneumothorax/hemothorax/pulmonary contusion) with ongoing oxygen need.
+- ESI step 1 (life-saving intervention): No evidence of cardiac/respiratory arrest, severe respiratory distress, unresponsiveness, or hemodynamic collapse. Supplemental O2 via nasal cannula and an already placed chest tube do not by themselves indicate immediate life-saving intervention at triage.
+- ESI step 2 (high-risk): High-risk trauma with chest pain and active chest tube management plus oxygen requirement is time-critical and high risk for deterioration (blunt chest trauma complications, cardiac injury, ongoing respiratory compromise). This meets ESI Level 2 criteria.
+- Resources: She will require multiple resources (labs, ECG, imaging, surgical/trauma consult, IV meds), but high-risk status already places her at Level 2.
+
+2",33.263731718063354
+34,4,4,success,,"Structured clinical data:
+锘縮ubject_id: 17985853
+intime: 2123-7-9 16:05
+outtime: 2123-7-9 19:32
+gender: F
+race: BLACK/AFRICAN AMERICAN
+arrival_transport: WALK IN
+disposition: HOME
+temperature: 99.4
+heartrate: 72
+resprate: 20
+o2sat: 99
+sbp: 114
+dbp: 74
+pain: 8
+chiefcomplaint: R Wrist pain
+age: 24
+original_index: 34
+
+Triage narrative:
+""""""A 23-year-old African American female presented to the ED with a chief complaint of right wrist pain, rated as 8 out of 10. The patient walked into the ED. Vital signs on arrival were: heart rate 72, respiratory rate 20, blood pressure 114/74, SpO2 99%, and temperature 99.4掳F. The patient did not report any other symptoms or relevant medical history upon triage.""""""
+
+Please provide your clinical reasoning followed by the ESI level:","Reasoning:
+- ABCs intact; vitals stable; no signs of respiratory distress, shock, or altered mental status → not ESI 1.
+- Isolated wrist pain without high-risk features (no deformity, neurovascular compromise, or systemic symptoms). Severe pain score alone, in a stable patient, does not mandate ESI 2 → not ESI 2.
+- Likely resources needed: wrist X-ray. Oral analgesics are not a resource. Splinting may be needed but not guaranteed at triage; typical prediction for uncomplicated wrist pain is a single resource (imaging) → ESI 4 rather than 3.
+
+4",22.4946506023407
+35,3,3,success,,"Structured clinical data:
+锘縮ubject_id: 15762044
+intime: 2129-8-14 11:07
+outtime: 2129-8-14 14:29
+gender: M
+race: WHITE
+arrival_transport: WALK IN
+disposition: HOME
+temperature: 97.9
+heartrate: 61
+resprate: 16
+o2sat: 100
+sbp: 153
+dbp: 100
+pain: 7
+chiefcomplaint: R Foot swelling
+age: 59
+original_index: 35
+
+Triage narrative:
+""""""A 54-year-old white male presented to the ED with a chief complaint of right foot swelling, reporting a pain level of 7. The patient arrived as a walk-in. Vital signs upon arrival: BP 153/100, P 61, RR 16, SpO2 100%, T 97.9掳F. The patient has a history of hypertension.""""""
+
+Please provide your clinical reasoning followed by the ESI level:","Reasoning:
+- Level 1: No need for immediate life-saving intervention. Airway/breathing/circulation intact; vitals stable aside from elevated BP.
+- Level 2: No high-risk features flagged in triage (no chest pain, dyspnea, AMS, systemic toxicity). Pain 7/10 but patient not in severe distress; presentation (isolated foot swelling) not inherently high risk without red flags.
+- Resources likely needed: At least two. Differential includes cellulitis, gout, musculoskeletal injury, or less likely DVT. Anticipated resources: labs (CBC, BMP, CRP/ESR, possibly uric acid), imaging (foot X-ray and/or venous ultrasound if concern for DVT), analgesics (could be IV/IM or PO), possibly antibiotics. Patient is stable and can wait.
+- Danger zone vitals: None (HR 61, RR 16, SpO2 100%, afebrile). Elevated BP alone without symptoms doesn’t change ESI.
+
+3",24.67340850830078
+36,1,1,success,,"Structured clinical data:
+锘縮ubject_id: 19948220
+intime: 2163-5-14 7:05
+outtime: 2163-5-14 8:20
+gender: M
+race: WHITE
+arrival_transport: AMBULANCE
+disposition: ADMITTED
+pain: Critical
+chiefcomplaint: Cardiac arrest
+age: 75
+original_index: 36
+
+Triage narrative:
+""""""A 75-year-old white male was transported to the ED by ambulance after a witnessed cardiac arrest at home. The patient had an extended downtime of approximately 30 minutes without resuscitation. Upon arrival, the patient's vital signs indicated cardiac arrest, with heart rate, respiratory rate, blood pressure, and SpO2 all at 0. The chief complaint was cardiac arrest.""""""
+
+Please provide your clinical reasoning followed by the ESI level:","- Structured data review: 75-year-old male, arrived by ambulance, chief complaint “Cardiac arrest,” pain marked critical, disposition admitted. 
+- Triage narrative highlights: Witnessed arrest at home, ~30 minutes downtime without resuscitation, arrives pulseless/apneic with HR/RR/BP/SpO2 all 0.
+- Clinical reasoning: Patient is in cardiac arrest on arrival and requires immediate life-saving interventions (CPR, airway management, defibrillation/ACLS meds). This meets ESI Level 1 criteria.
+
+1",6.047835111618042
+37,1,1,success,,"Structured clinical data:
+锘縮ubject_id: 17683498
+intime: 2152-4-3 10:34
+outtime: 2152-4-3 12:58
+gender: F
+race: WHITE
+arrival_transport: AMBULANCE
+disposition: ADMITTED
+pain: 0
+chiefcomplaint: Overdose
+age: 18
+original_index: 37
+
+Triage narrative:
+""""""An 18-year-old female with a history of depression and borderline personality disorder presented to the emergency department following an intentional overdose of Wellbutrin SR, approximately 2.8g, resulting in a generalized tonic-clonic seizure. EMS reported seizure activity before arrival. Upon arrival, she was intubated for airway protection. Initial vital signs showed a heart rate of 113 and blood pressure of 105/53. She exhibited tachycardia, agitation, increased muscle tone, and sustained bilateral lower extremity clonus. Her past medical history includes depression, borderline personality disorder, and a prior suicide attempt. There are no recorded allergies. Arrival was via ambulance.""""""
+
+Please provide your clinical reasoning followed by the ESI level:","Reasoning:
+- Presentation: Intentional overdose of bupropion SR (~2.8 g) with prehospital generalized tonic-clonic seizure.
+- On arrival: Already intubated for airway protection, tachycardic, agitated with neuromuscular hyperactivity.
+- Immediate life-saving intervention: Endotracheal intubation and need for airway/ventilatory support and ongoing critical management for toxic ingestion with seizures.
+- ESI determination: Any patient requiring immediate life-saving intervention (airway management) is ESI Level 1.
+
+1",10.565364837646484
+38,2,2,success,,"Structured clinical data:
+锘縮ubject_id: 13987701
+intime: 2145-9-29 12:53
+outtime: 2145-9-29 20:10
+gender: M
+race: WHITE
+arrival_transport: WALK IN
+disposition: ADMITTED
+temperature: 97.2
+heartrate: 100
+resprate: 16
+o2sat: 99
+sbp: 122
+dbp: 84
+pain: 10
+chiefcomplaint: Abd pain, Abdominal distention
+age: 80
+original_index: 38
+
+Triage narrative:
+""""""A 77-year-old male with a significant medical history, including laryngeal cancer, moderate COPD, GERD, obstructive sleep apnea on CPAP, atrial fibrillation on anticoagulation, hypertension, gout, and a history of colonic polyps presented to the ED with a chief complaint of severe abdominal pain (rated 10/10) and abdominal distention. Upon arrival, vital signs were: HR 100, RR 16, BP 122/84, SpO2 99%, T 97.2掳F. He has a known allergy to penicillins. The patient is at risk for complications due to his anticoagulation therapy and history of atrial fibrillation.""""""
+
+Please provide your clinical reasoning followed by the ESI level:","Clinical reasoning:
+- Step 1 (Life-saving intervention?): No. Airway, breathing, circulation stable; vitals within acceptable range; no immediate intervention required.
+- Step 2 (High-risk situation/severe pain/AMS?): Yes. Elderly patient (80) with 10/10 abdominal pain and distention—high-risk for time-critical conditions (bowel obstruction, perforation, mesenteric ischemia, AAA, or intra-abdominal bleeding), especially given anticoagulation for atrial fibrillation. Severe pain alone qualifies for ESI 2, and the anticoagulation/age further increase risk.
+- Step 3 (Resources): Would likely require multiple resources (labs, CT abdomen/pelvis, IV analgesia, possible IV fluids, surgical consult), but classification already met at Step 2.
+
+2",15.672141790390015
+39,2,2,success,,"Structured clinical data:
+锘縮ubject_id: 16471016
+intime: 2191-5-8 5:42
+outtime: 2191-5-8 12:27
+gender: M
+race: BLACK/AFRICAN AMERICAN
+arrival_transport: WALK IN
+disposition: ADMITTED
+temperature: 99.6
+heartrate: 85
+resprate: 16
+o2sat: 90
+sbp: 166
+dbp: 84
+pain: 7
+chiefcomplaint: Abd pain, Vomiting, Nausea, Dyspnea
+age: 71
+original_index: 39
+
+Triage narrative:
+""""""A 67-year-old Black/African American male with a history of hypertension, bilateral pulmonary emboli, stage II chronic kidney disease, and metastatic renal cell carcinoma to the lungs and mediastinum, presented to the ED with abdominal pain, vomiting, nausea, and dyspnea. He recently underwent a right radical nephrectomy one month ago and has been experiencing right lower quadrant pain since the surgery, with non-bilious non-bloody emesis in the past two weeks. This morning, he developed acute right-sided chest pain and dyspnea that resolved with rest. He denies fever but reports taking oxycodone for post-surgical abdominal pain. The patient is a walk-in arrival with no known allergies. Vital signs: BP 166/84, HR 85, RR 16, SpO2 90%, T 99.6掳 F. Pain is rated at 7/10. Family history includes multiple early deaths from coronary artery disease among siblings and renal cancer in the mother.""""""
+
+Please provide your clinical reasoning followed by the ESI level:","Clinical reasoning:
+- Step 1 (life-saving intervention needed?): No. Patient is alert, RR 16 without obvious distress, BP stable, HR 85. SpO2 is 90% (borderline hypoxemia) but not <90%, and there is no indication of impending airway failure or need for immediate ventilation.
+- Step 2 (high risk/time-critical?): Yes. New/right-sided chest pain and dyspnea this morning in a 71-year-old with prior bilateral pulmonary emboli, active metastatic cancer, and recent major surgery—very high risk for PE or ACS. Current hypoxemia (SpO2 90%) and severe pain (7/10) further support high-risk classification.
+- Resource expectation: Would require multiple resources (ECG, troponin, labs, CXR, likely CTA chest, possible IV meds/oxygen/anticoagulation), but high-risk status alone qualifies as ESI 2.
+
+2",16.01377010345459
+40,5,5,success,,"Structured clinical data:
+锘縮ubject_id: 19546465
+intime: 2167-10-31 12:11
+outtime: 2167-10-31 13:53
+gender: F
+race: WHITE
+arrival_transport: WALK IN
+disposition: HOME
+temperature: 98.1
+heartrate: 74
+resprate: 16
+o2sat: 100
+sbp: 125
+dbp: 69
+pain: 0
+chiefcomplaint: Suture removal
+age: 40
+original_index: 40
+
+Triage narrative:
+""""""A 31-year-old female presented to the emergency department with a chief complaint of suture removal. The patient arrived as a walk-in and reported no pain. On arrival, her vital signs were stable: heart rate 74, respiratory rate 16, blood pressure 125/69, SpO2 100%, and temperature 98.1掳 F. """"""
+
+Please provide your clinical reasoning followed by the ESI level:","Reasoning:
+- Airway, breathing, circulation intact; vitals normal; no pain or distress. Not requiring any immediate life-saving interventions → not ESI 1.
+- No high-risk complaint, no new concerning symptoms, no altered mental status, and pain 0 → not ESI 2.
+- Anticipated resources: Suture removal typically does not require labs, imaging, IV meds/fluids, or specialty consult. It is a straightforward visit often requiring no ED resources per ESI examples → no resources.
+- Disposition likely home; stable walk-in.
+
+Final ESI level:
+5",27.63401746749878
+42,1,1,success,,"Structured clinical data:
+锘縮ubject_id: 11963546
+intime: 2142-9-14 3:15
+outtime: 2142-9-14 6:24
+gender: F
+race: WHITE
+arrival_transport: AMBULANCE
+disposition: ADMITTED
+temperature: 98.1
+heartrate: 115
+resprate: 16
+o2sat: 100
+sbp: 125
+dbp: 95
+pain: 13
+chiefcomplaint: Abd pain, Transfer
+age: 68
+original_index: 42
+
+Triage narrative:
+""""""A 67-year-old female with a history of hypertension and hyperlipidemia presents to the ED with a chief complaint of abdominal pain and altered mental status. The patient was discovered by her husband with altered mental status. She is hemodynamically unstable. The situation is critical, requiring immediate medical intervention.""""""
+
+Please provide your clinical reasoning followed by the ESI level:","Clinical reasoning:
+- Structured data: 68-year-old female, HR 115 (tachycardic), otherwise normal vitals recorded; arrived by ambulance; severe abdominal pain; altered mental status noted in chief complaint. Disposition is admission.
+- Triage narrative (given significant weight): Found with altered mental status and described as hemodynamically unstable; “critical, requiring immediate medical intervention.”
+- ESI criteria: Hemodynamic instability and altered mental status with concern for life-threatening intra-abdominal pathology (e.g., ruptured AAA, sepsis, hemorrhage) implies need for immediate life-saving interventions (airway protection, aggressive resuscitation, emergent imaging/consults). This meets ESI Level 1 despite the recorded vitals, as the narrative indicates active instability and critical condition.
+
+1",9.765711069107056
+44,1,2,success,,"Structured clinical data:
+锘縮ubject_id: 18692317
+intime: 2175-10-27 22:51
+outtime: 2175-10-28 1:05
+gender: M
+race: WHITE
+arrival_transport: AMBULANCE
+disposition: ADMITTED
+heartrate: 60
+resprate: 12
+o2sat: 100
+pain: 0
+chiefcomplaint: DYSPNEA
+age: 67
+original_index: 44
+
+Triage narrative:
+""""""66-year-old white male with a significant medical history of COPD (GOLD Stage IV), coronary artery disease post-CABG, pulmonary embolism, and deep vein thrombosis (managed with Coumadin and an IVC filter), presented to the ED with acute worsening dyspnea over the past week and increased falls. He was transported by ambulance. Upon arrival, he was alert but disoriented. He has a history of osteosarcoma with right above-the-knee amputation and ongoing tobacco use managed with nicotine patches. The patient is allergic to penicillins and has expressed a preference for non-invasive ventilation, declining intubation if necessary.""""""
+
+Please provide your clinical reasoning followed by the ESI level:","Reasoning:
+- Step 1 (life-saving intervention needed now?): No. Vitals at triage are stable (RR 12, SpO2 100%—likely on O2), no signs of severe respiratory distress or hemodynamic collapse; no immediate need for intubation/BI-PAP identified at triage.
+- Step 2 (high risk/altered mental status/severe distress): Yes. High-risk presentation: acute worsening dyspnea in GOLD IV COPD with significant cardiopulmonary comorbidities (CAD post-CABG, prior PE/DVT on warfarin) and recent increased falls while anticoagulated. He is alert but disoriented (altered mental status). Potential time-critical etiologies include COPD exacerbation with hypercapnia, PE, ACS, pneumonia, or intracranial hemorrhage from falls on anticoagulation.
+- Step 3 (resources): Would require multiple resources (ECG, labs including ABG/VBG, troponin, BNP, coagulation studies, imaging including CXR ± CT chest/PE protocol, and likely CT head), but ESI 2 is already met due to high-risk/AMS.
+
+2",15.864340782165527
+45,5,5,success,,"Structured clinical data:
+锘縮ubject_id: 15341533
+intime: 2171-9-2 21:24
+outtime: 2171-9-3 8:16
+gender: F
+race: WHITE
+arrival_transport: AMBULANCE
+disposition: HOME
+temperature: 99.6
+heartrate: 97
+resprate: 16
+o2sat: 97
+sbp: 120
+dbp: 70
+pain: 0
+chiefcomplaint: Med refill
+age: 41
+original_index: 45
+
+Triage narrative:
+""""""A 40-year-old white female presented to the ED with a chief complaint of needing a medication refill. The patient arrived by ambulance. Her vital signs on arrival were stable: BP 120/70, HR 97, RR 16, SpO2 97%, and temperature 99.6掳F, with no reported pain.""""""
+
+Please provide your clinical reasoning followed by the ESI level:","Clinical reasoning:
+- Initial assessment: Vitals stable (BP 120/70, HR 97, RR 16, SpO2 97%, T 99.6 F), no pain, alert, no respiratory distress.
+- Triage narrative: Chief complaint is medication refill with no acute symptoms or high-risk features. Arrival by ambulance does not alter acuity without clinical instability or high-risk complaint.
+- ESI decision:
+  - Not Level 1: No immediate life-saving intervention needed.
+  - Not Level 2: No high-risk condition, severe pain, or altered mental status.
+  - Resource estimation: Likely needs no ED resources beyond provider evaluation and a prescription; no labs, imaging, ECG, or treatments anticipated.
+
+5",7.1750242710113525
+47,2,2,success,,"Structured clinical data:
+锘縮ubject_id: 17282956
+intime: 2162-5-23 19:04
+outtime: 2162-5-23 23:18
+gender: F
+race: UNKNOWN
+arrival_transport: UNKNOWN
+disposition: ADMITTED
+temperature: 98.1
+heartrate: 100
+resprate: 16
+o2sat: 98
+sbp: 138
+dbp: 78
+pain: 2
+chiefcomplaint: L Leg injury, Transfer
+age: 40
+original_index: 47
+
+Triage narrative:
+""""""A 40-year-old female with a history of hypothyroidism and depression, allergic to erythromycin base, was transferred to the emergency department with a chief complaint of left leg pain. The patient sustained injuries after falling from a porch, resulting in an open left tibia/fibula fracture, a nondisplaced left medial malleolar fracture, and a fracture of the base of the left metatarsal. She reported falling after the porch railing gave way, landing on her left leg. Her vital signs upon arrival were stable, with a heart rate of 100, respiratory rate of 16, blood pressure of 138/78, SpO2 at 98%, and temperature of 98.1掳F. The patient rated her pain at 2/10.""""""
+
+Please provide your clinical reasoning followed by the ESI level:","Step-by-step reasoning:
+- Initial assessment: Vitals stable (HR 100, RR 16, BP 138/78, SpO2 98%), pain 2/10. No airway/breathing/circulation compromise; no immediate life-saving intervention needed → not ESI 1.
+- Triage narrative analysis: Open left tibia/fibula fracture with additional ankle and metatarsal fractures after a fall, transferred for definitive care. Open fractures are high risk and time-sensitive due to contamination/infection risk, need for urgent IV antibiotics, tetanus, irrigation/debridement, splinting, and emergent orthopedic evaluation; potential for neurovascular injury or compartment syndrome.
+- Resource needs would be multiple (labs, imaging, IV antibiotics, tetanus, pain control, ortho consult, likely operative management), but high-risk status already qualifies for ESI 2.
+
+2",12.72632646560669
+48,4,4,success,,"Structured clinical data:
+锘縮ubject_id: 16052231
+intime: 2117-7-6 10:22
+outtime: 2117-7-6 15:23
+gender: F
+race: WHITE
+arrival_transport: WALK IN
+disposition: HOME
+temperature: 98.9
+heartrate: 81
+resprate: 18
+o2sat: 99
+sbp: 148
+dbp: 86
+pain: 6
+chiefcomplaint: R Foot pain
+age: 25
+original_index: 48
+
+Triage narrative:
+""""""A 22-year-old white female presents to the emergency department with a chief complaint of right foot pain, rated as 6 out of 10. She arrived at the ED by walking in. Vital signs are blood pressure 148/86, heart rate 81, respiratory rate 18, SpO2 99%, and temperature 98.9掳F. The patient reports no additional symptoms. """"""
+
+Please provide your clinical reasoning followed by the ESI level:","Clinical reasoning:
+- Airway, breathing, circulation stable; normal HR/RR/O2/temp; no immediate life-saving needs → not ESI 1.
+- No high-risk features: isolated foot pain, ambulatory, normal mentation, no concerning systemic symptoms, pain moderate (6/10) → not ESI 2.
+- Expected resources: likely one imaging study (right foot X-ray). Oral analgesics and RICE are not counted as resources. No clear need for labs or multiple studies anticipated → likely 1 resource → ESI 4.
+
+4",21.51234221458435
+49,2,2,success,,"Structured clinical data:
+锘縮ubject_id: 16100723
+intime: 2144-12-14 14:23
+outtime: 2144-12-14 23:47
+gender: M
+race: BLACK/AFRICAN AMERICAN
+arrival_transport: WALK IN
+disposition: ADMITTED
+temperature: 98.8
+heartrate: 77
+resprate: 18
+o2sat: 100
+sbp: 125
+dbp: 65
+pain: 9
+chiefcomplaint: ABDOMINAL PAIN
+age: 38
+original_index: 49
+
+Triage narrative:
+""""""A 34-year-old Black/African American male with a history of fistulizing Crohn's disease presented to the ED with severe anal pain. The patient reports increasing anal pain, decreased oral intake due to fear of bowel movements, and an 18-pound weight loss over the last two months. The patient also experiences purulent and bloody discharge from abscesses, episodic fevers, and night sweats. Initial vital signs in the ED were stable.""""""
+
+Please provide your clinical reasoning followed by the ESI level:","Reasoning:
+- Step 1 (Life-saving intervention?): Vitals stable; no airway, breathing, circulation compromise or need for immediate life-saving intervention. Not ESI 1.
+- Step 2 (High risk, severe pain, or AMS?): Yes. History of fistulizing Crohn’s with severe anal pain (9/10), purulent/bloody discharge from abscesses, episodic fevers, night sweats, and significant recent weight loss suggests a high-risk condition (possible perianal/perirectal abscess, deep space infection, sepsis risk, and need for urgent colorectal/surgical evaluation). Severe pain alone also qualifies.
+- Therefore ESI 2 is appropriate. While he will likely require multiple resources (labs, imaging, IV antibiotics/analgesia, and consult), the high-risk presentation moves him from ESI 3 to ESI 2.
+
+2",27.52340579032898

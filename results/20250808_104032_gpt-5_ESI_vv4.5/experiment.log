@@ -1,0 +1,226 @@
+2025-08-08 10:40:32,582 - esi_classification - INFO - main:524 - ======================================================================
+Starting Experiment: 20250808_104032_gpt-5_ESI_vv4.5
+======================================================================
+2025-08-08 10:40:32,582 - esi_classification - INFO - load_and_prepare_data:197 - Loading data from MIETIC-validate-samples.csv
+2025-08-08 10:40:32,585 - esi_classification - INFO - load_and_prepare_data:204 - Total samples in dataset: 50
+2025-08-08 10:40:32,586 - esi_classification - INFO - load_and_prepare_data:214 - Validated samples (RETAIN): 36
+2025-08-08 10:40:32,682 - esi_classification - INFO - run_experiment:346 - Starting ESI classification with gpt-5
+2025-08-08 10:40:32,683 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:40:32,683 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:40:32,683 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 1062 chars
+2025-08-08 10:40:32,683 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:40:51,600 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 885 chars
+2025-08-08 10:40:52,101 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:40:52,101 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:40:52,101 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 1024 chars
+2025-08-08 10:40:52,102 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:40:59,880 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 537 chars
+2025-08-08 10:41:00,382 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:41:00,382 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:41:00,382 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 1259 chars
+2025-08-08 10:41:00,382 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:41:18,594 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 565 chars
+2025-08-08 10:41:19,096 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:41:19,096 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:41:19,096 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 713 chars
+2025-08-08 10:41:19,096 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:41:28,888 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 583 chars
+2025-08-08 10:41:29,390 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:41:29,390 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:41:29,390 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 969 chars
+2025-08-08 10:41:29,390 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:41:57,673 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 1263 chars
+2025-08-08 10:41:58,174 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:41:58,174 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:41:58,174 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 804 chars
+2025-08-08 10:41:58,174 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:42:19,425 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 912 chars
+2025-08-08 10:42:19,926 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:42:19,927 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:42:19,927 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 1151 chars
+2025-08-08 10:42:19,927 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:42:32,264 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 848 chars
+2025-08-08 10:42:32,765 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:42:32,765 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:42:32,765 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 1171 chars
+2025-08-08 10:42:32,765 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:42:49,411 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 798 chars
+2025-08-08 10:42:49,912 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:42:49,913 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:42:49,913 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 948 chars
+2025-08-08 10:42:49,913 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:43:16,947 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 705 chars
+2025-08-08 10:43:17,449 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:43:17,449 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:43:17,449 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 1081 chars
+2025-08-08 10:43:17,449 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:44:15,074 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 899 chars
+2025-08-08 10:44:15,576 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:44:15,576 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:44:15,576 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 1060 chars
+2025-08-08 10:44:15,576 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:44:42,878 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 1094 chars
+2025-08-08 10:44:43,380 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:44:43,380 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:44:43,380 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 1101 chars
+2025-08-08 10:44:43,380 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:45:00,605 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 680 chars
+2025-08-08 10:45:01,107 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:45:01,107 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:45:01,107 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 1100 chars
+2025-08-08 10:45:01,107 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:45:10,119 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 563 chars
+2025-08-08 10:45:10,620 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:45:10,621 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:45:10,621 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 921 chars
+2025-08-08 10:45:10,621 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:45:45,868 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 826 chars
+2025-08-08 10:45:46,370 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:45:46,370 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:45:46,370 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 679 chars
+2025-08-08 10:45:46,370 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:46:04,904 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 736 chars
+2025-08-08 10:46:05,405 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:46:05,405 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:46:05,405 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 1147 chars
+2025-08-08 10:46:05,406 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:47:01,352 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 913 chars
+2025-08-08 10:47:01,853 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:47:01,853 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:47:01,853 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 747 chars
+2025-08-08 10:47:01,853 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:47:32,696 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 807 chars
+2025-08-08 10:47:33,197 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:47:33,197 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:47:33,198 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 819 chars
+2025-08-08 10:47:33,198 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:47:38,396 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 508 chars
+2025-08-08 10:47:38,898 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:47:38,898 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:47:38,898 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 887 chars
+2025-08-08 10:47:38,898 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:47:56,265 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 1212 chars
+2025-08-08 10:47:56,766 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:47:56,766 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:47:56,767 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 812 chars
+2025-08-08 10:47:56,767 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:48:18,901 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 572 chars
+2025-08-08 10:48:19,402 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:48:19,402 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:48:19,402 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 665 chars
+2025-08-08 10:48:19,403 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:48:26,905 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 452 chars
+2025-08-08 10:48:27,406 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:48:27,406 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:48:27,407 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 736 chars
+2025-08-08 10:48:27,407 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:48:46,693 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 602 chars
+2025-08-08 10:48:47,195 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:48:47,195 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:48:47,195 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 778 chars
+2025-08-08 10:48:47,195 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:49:20,459 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 1153 chars
+2025-08-08 10:49:20,961 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:49:20,961 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:49:20,961 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 771 chars
+2025-08-08 10:49:20,961 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:49:43,455 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 549 chars
+2025-08-08 10:49:43,956 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:49:43,956 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:49:43,956 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 666 chars
+2025-08-08 10:49:43,957 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:50:08,629 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 844 chars
+2025-08-08 10:50:09,131 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:50:09,131 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:50:09,131 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 702 chars
+2025-08-08 10:50:09,131 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:50:15,178 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 495 chars
+2025-08-08 10:50:15,680 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:50:15,680 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:50:15,680 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 1020 chars
+2025-08-08 10:50:15,680 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:50:26,245 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 520 chars
+2025-08-08 10:50:26,747 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:50:26,747 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:50:26,747 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 981 chars
+2025-08-08 10:50:26,747 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:50:42,418 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 746 chars
+2025-08-08 10:50:42,920 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:50:42,920 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:50:42,920 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 1332 chars
+2025-08-08 10:50:42,920 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:50:58,934 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 794 chars
+2025-08-08 10:50:59,435 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:50:59,435 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:50:59,435 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 689 chars
+2025-08-08 10:50:59,435 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:51:27,069 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 536 chars
+2025-08-08 10:51:27,570 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:51:27,571 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:51:27,571 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 734 chars
+2025-08-08 10:51:27,571 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:51:37,336 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 829 chars
+2025-08-08 10:51:37,838 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:51:37,838 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:51:37,838 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 991 chars
+2025-08-08 10:51:37,838 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:51:53,702 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 966 chars
+2025-08-08 10:51:54,203 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:51:54,203 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:51:54,203 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 646 chars
+2025-08-08 10:51:54,203 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:52:01,378 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 655 chars
+2025-08-08 10:52:01,879 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:52:01,880 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:52:01,880 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 1074 chars
+2025-08-08 10:52:01,880 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:52:14,605 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 810 chars
+2025-08-08 10:52:15,107 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:52:15,107 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:52:15,107 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 708 chars
+2025-08-08 10:52:15,107 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:52:36,619 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 477 chars
+2025-08-08 10:52:37,120 - esi_classification - INFO - get_llm_response:252 - Making API call with model: gpt-5
+2025-08-08 10:52:37,121 - esi_classification - DEBUG - get_llm_response:253 - System prompt length: 1107 chars
+2025-08-08 10:52:37,121 - esi_classification - DEBUG - get_llm_response:254 - User prompt length: 851 chars
+2025-08-08 10:52:37,121 - esi_classification - DEBUG - get_llm_response:255 - Temperature: 1.0
+2025-08-08 10:53:04,643 - esi_classification - INFO - get_llm_response:263 - API call successful. Response length: 776 chars
+2025-08-08 10:53:05,152 - esi_classification - INFO - run_experiment:359 - Processing complete: 36 successful, 0 errors
+2025-08-08 10:53:05,162 - esi_classification - INFO - save_experiment_results:438 - Saving experiment results...
+2025-08-08 10:53:05,577 - esi_classification - INFO - plot_confusion_matrix:387 - Confusion matrix plot saved to results/20250808_104032_gpt-5_ESI_vv4.5/confusion_matrix.png
+2025-08-08 10:53:05,581 - esi_classification - INFO - generate_summary_report:513 - 
+======================================================================
+ESI CLASSIFICATION EXPERIMENT SUMMARY
+======================================================================
+Run Date: 2025-08-08 10:53:05
+Model: gpt-5
+Duration: 752.6 seconds
+
+--- DATASET & PROCESSING ---
+Source File: MIETIC-validate-samples.csv
+Total Samples Processed: 36
+Successful Predictions: 36 (100.0%)
+
+--- PERFORMANCE METRICS ---
+Accuracy: 0.8889
+Quadratic Weighted Kappa: 0.9610
+
+--- CLASSIFICATION REPORT ---
+            precision   recall      f1-score    support
+ESI-1       0.92        0.86        0.89        14.0
+ESI-2       0.77        0.91        0.83        11.0
+ESI-3       1.00        0.80        0.89        5.0
+ESI-4       1.00        1.00        1.00        4.0
+ESI-5       1.00        1.00        1.00        2.0
+macro avg   0.94        0.91        0.92        36.0
+weighted avg0.90        0.89        0.89        36.0
+
+--- CONFUSION MATRIX ---
+            Pred ESI-1  Pred ESI-2  Pred ESI-3  Pred ESI-4  Pred ESI-5
+True ESI-1          12           2           0           0           0
+True ESI-2           1          10           0           0           0
+True ESI-3           0           1           4           0           0
+True ESI-4           0           0           0           4           0
+True ESI-5           0           0           0           0           2
+2025-08-08 10:53:05,582 - esi_classification - INFO - save_experiment_results:469 - All results saved to: results/20250808_104032_gpt-5_ESI_vv4.5
+2025-08-08 10:53:05,582 - esi_classification - INFO - main:536 - Experiment completed successfully in 752.6 seconds.
