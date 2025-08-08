@@ -10,6 +10,22 @@ Overcrowding in emergency departments is a global challenge. This study explores
 
 The main script (`llm-esi-triage.py`) runs an experiment on a validated subset of the MIETIC dataset, generates ESI predictions, and produces a complete set of performance reports and artifacts for analysis.
 
+## 📊 Results Summary
+
+Our experiments demonstrate strong performance using prompt engineering for ESI classification:
+
+| Model | Accuracy | Quadratic Kappa | F1-Score (Weighted) |
+|-------|----------|----------------|-------------------|
+| GPT-4.1 | 86.1% | 0.948 | 0.857 |
+| GPT-5 | 88.9% | 0.961 | 0.890 |
+
+*Results based on 36 validated cases from the MIETIC dataset.*
+
+**Key Findings:**
+- Both models achieved high quadratic kappa scores (>0.94), indicating excellent agreement with expert classifications
+- GPT-5 shows modest improvement over GPT-4.1 across all metrics
+- Perfect classification achieved for ESI-4 and ESI-5 categories with GPT-5
+
 ## 📄 Paper Draft
 
 A draft of the accompanying paper for this research, "High-Performance Emergency Triage Classification Using Cost-Effective Prompt Engineering," is available for viewing. As a work-in-progress, feedback is welcome.
