@@ -8,7 +8,7 @@ The goal of this project is to provide a transparent and reproducible framework 
 
 Overcrowding in emergency departments is a global challenge. This study explores how prompt engineering, a low-cost alternative to fine-tuning, can be used to guide LLMs to achieve high performance in patient classification, aligning with the clinical reasoning of experts.
 
-The main script (`esi_classification.py`) runs an experiment on a validated subset of the MIETIC dataset, generates ESI predictions, and produces a complete set of performance reports and artifacts for analysis.
+The main script (`llm-esi-triage.py`) runs an experiment on a validated subset of the MIETIC dataset, generates ESI predictions, and produces a complete set of performance reports and artifacts for analysis.
 
 ## 📄 Paper Draft
 
@@ -71,7 +71,7 @@ Follow the steps below to replicate the experiment.
 With everything set up, run the script from your terminal:
 
 ```bash
-python esi_classification.py
+python llm-esi-triage.py
 ```
 
 The script will create a new directory inside the `results/` folder for each run, containing all the generated artifacts.
