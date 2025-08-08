@@ -55,15 +55,15 @@ class Config:
     """Configuration for ESI classification experiments."""
     # Data Settings
     source_data_file: str = 'MIETIC-validate-samples.csv'
-    max_rows_to_process: Optional[int] = 36  # None = process all validated samples
+    max_rows_to_process: Optional[int] = 36 # 36  # None = process all validated samples
     
     # --- CRITICAL COLUMNS ---
     ground_truth_column: str = 'acuity'
     narrative_column: str = 'tiragecase'
     
     # Model Settings
-    model_name: str = "gpt-4.1" # Using the confirmed best-performing model
-    temperature: float = 0.1
+    model_name: str = "gpt-5"
+    temperature: float = 1.0  # GPT-5 only supports temperature=1.0
     api_call_delay: float = 0.5
     max_retries: int = 5
     
@@ -156,7 +156,7 @@ Please provide your clinical reasoning followed by the ESI level:"""
 def setup_logging(run_dir: Path) -> logging.Logger:
     """Configure comprehensive logging for the experiment."""
     logger = logging.getLogger('esi_classification')
-    logger.setLevel(logging.INFO)
+    logger.setLevel(logging.DEBUG)
     
     if logger.hasHandlers():
         logger.handlers.clear()
@@ -248,15 +248,27 @@ def format_structured_data(row: pd.Series, exclude_cols: List[str]) -> str:
 )
 def get_llm_response(client: OpenAI, model: str, system: str, user: str, temp: float) -> str:
     """Get response from LLM with retry logic."""
-    response = client.chat.completions.create(
-        model=model,
-        messages=[{"role": "system", "content": system}, {"role": "user", "content": user}],
-        temperature=temp,
-    )
-    content = response.choices[0].message.content
-    if not content:
-        raise ValueError("Received empty response from API")
-    return content.strip()
+    logger = logging.getLogger('esi_classification')
+    logger.info(f"Making API call with model: {model}")
+    logger.debug(f"System prompt length: {len(system)} chars")
+    logger.debug(f"User prompt length: {len(user)} chars")
+    logger.debug(f"Temperature: {temp}")
+    
+    try:
+        response = client.chat.completions.create(
+            model=model,
+            messages=[{"role": "system", "content": system}, {"role": "user", "content": user}],
+            temperature=temp,
+        )
+        logger.info(f"API call successful. Response length: {len(response.choices[0].message.content or '')} chars")
+        content = response.choices[0].message.content
+        if not content:
+            raise ValueError("Received empty response from API")
+        return content.strip()
+    except Exception as e:
+        logger.error(f"API call failed with error: {type(e).__name__}: {str(e)}")
+        logger.error(f"Model attempted: {model}")
+        raise
 
 def extract_esi_level(response: str, detailed_errors: bool = True) -> Any:
     """Extract ESI level (1-5) from LLM response with multiple strategies."""
